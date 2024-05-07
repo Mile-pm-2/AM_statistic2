@@ -7,5 +7,6 @@ sh = sa.open("sheet_answers")
 
 wks = sh.sheet1
 
-
+select = 'asdf'
 print(wks.acell('B2').value)
+print(select)
