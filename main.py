@@ -1,12 +1,51 @@
 import gspread
 import pandas as pd
 
-sa = gspread.service_account(filename='credentials.json')
-sh = sa.open("sheet_answers")
+# Аутентификация и открытие Google Sheet
+sa = gspread.service_account(filename='credentials2.json')
+sh = sa.open("sheet_answers").sheet1
 
+# Определяем ожидаемые заголовки
+expected_headers = [
+    'Отметка времени', 'Имя, фамилия', 'Пол', 'Возраст',
+    'Город, в котором Вы проживаете в настоящее время', 'Ваш родной город',
+    'Укажите форму обучения', 'Укажите основу обучения',
+    'Оцените качество образования в НГТУ им. Р. Е. Алексеева',
+    'Укажите Вашу группу (Пример: 20-ПМ-1)', 'Насколько заработная плата соответствует ожиданиям',
+    'Насколько вы были уверены в специальности, когда поступали',
+    'Занимались ли доп. образованием, помимо основного',
+    'Вы больше узнали из ВУЗ\'а или самостоятельной работы?', 'Оцените, насколько деятельность на специ',
+    'Вы довольны уровнем своей заработной платы?'
+]
 
-wks = sh.sheet1
+# Извлечение всех данных из Google Sheet с указанием ожидаемых заголовков
+data = sh.get_all_records(expected_headers=expected_headers)
 
-select = 'asdf'
-print(wks.acell('B2').value)
-print(select)
+# Преобразование данных в DataFrame pandas
+df = pd.DataFrame(data)
+
+# Статистика по полу
+gender_stats = df['Пол'].value_counts()
+
+# Статистика по возрасту
+age_stats = df['Возраст'].describe()
+
+# Статистика по текущему городу проживания
+current_city_stats = df['Город, в котором Вы проживаете в настоящее время'].value_counts()
+
+# Статистика по форме обучения
+study_form_stats = df['Укажите форму обучения'].value_counts()
+
+# Статистика по основе обучения
+study_basis_stats = df['Укажите основу обучения'].value_counts()
+
+# Статистика по оценке качества образования
+education_quality_stats = df['Оцените качество образования в НГТУ им. Р. Е. Алексеева'].describe()
+
+# Выводим собранную статистику
+print("Статистика по полу:\n", gender_stats)
+print("\nСтатистика по возрасту:\n", age_stats)
+print("\nСтатистика по текущему городу проживания:\n", current_city_stats)
+print("\nСтатистика по форме обучения:\n", study_form_stats)
+print("\nСтатистика по основе обучения:\n", study_basis_stats)
+print("\nСтатистика по оценке качества образования:\n", education_quality_stats)
