@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53136db8-7dca-4570-a4a7-94a6772a764e" name="Changes" comment="second branch">
-      <change afterPath="$PROJECT_DIR$/credentials2.json" afterDir="false" />
+    <list default="true" id="53136db8-7dca-4570-a4a7-94a6772a764e" name="Changes" comment="parsed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -62,12 +61,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "second",
     "last_opened_file_path": "C:/Users/ergal/PycharmProjects/AM_statistic",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": []
@@ -134,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715106190624</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="parsed">
+      <option name="closed" value="true" />
+      <created>1716978801652</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716978801652</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +194,7 @@
     <MESSAGE value="start1" />
     <MESSAGE value="delete gitignore" />
     <MESSAGE value="second branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="second branch" />
+    <MESSAGE value="parsed" />
+    <option name="LAST_COMMIT_MESSAGE" value="parsed" />
   </component>
 </project>
