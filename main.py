@@ -3,6 +3,7 @@ import pandas as pd
 import schedule
 import time
 
+
 def update_data():
     # Аутентификация и открытие исходной таблицы Google Sheet
     sa = gspread.service_account(filename='credentials2.json')
@@ -102,6 +103,7 @@ def update_data():
 
     print("Данные успешно перенесены в новую таблицу.")
 
+update_data()
 # Настройка планировщика на выполнение обновления каждые 4 часа
 schedule.every(4).hours.do(update_data)
 

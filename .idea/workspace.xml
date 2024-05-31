@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53136db8-7dca-4570-a4a7-94a6772a764e" name="Changes" comment="+get to another sheet">
+    <list default="true" id="53136db8-7dca-4570-a4a7-94a6772a764e" name="Changes" comment="+get automate">
+      <change afterPath="$PROJECT_DIR$/opros.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -150,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717091290341</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="+get automate">
+      <option name="closed" value="true" />
+      <created>1717093516178</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717093516178</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +213,7 @@
     <MESSAGE value="second branch" />
     <MESSAGE value="parsed" />
     <MESSAGE value="+get to another sheet" />
-    <option name="LAST_COMMIT_MESSAGE" value="+get to another sheet" />
+    <MESSAGE value="+get automate" />
+    <option name="LAST_COMMIT_MESSAGE" value="+get automate" />
   </component>
 </project>
