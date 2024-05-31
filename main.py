@@ -1,10 +1,11 @@
-import gspread
-import pandas as pd
-import schedule
+import gspread       # Работа с API
+import pandas as pd  # to sheets
+import schedule      # to automate process
 import time
 
 
 def update_data():
+
     # Аутентификация и открытие исходной таблицы Google Sheet
     sa = gspread.service_account(filename='credentials2.json')
     sh = sa.open("sheet_answers").sheet1
@@ -90,7 +91,7 @@ def update_data():
         'Насколько вы были уверены в специальности, когда поступали': specialty_confidence_values
     }
 
-    # Создание новой таблицы и запись данных
+    # Запись данных в другую таблицу
     new_sh = sa.open("parsed_sheet")
     worksheet = new_sh.get_worksheet(0)
 
